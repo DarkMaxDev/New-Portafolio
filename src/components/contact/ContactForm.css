@@ -1,0 +1,119 @@
+.contact-form-wrapper {
+    background: var(--bg-secondary);
+    border: 1px solid var(--line-soft);
+    border-radius: 16px;
+    padding: 2.2rem;
+    box-shadow: var(--shadow-card);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-form-header {
+    margin-bottom: 2rem;
+}
+
+.contact-form-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-description {
+    color: var(--ink-faint);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-message {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem 1.2rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: 1px solid var(--line-strong);
+}
+
+.form-message-success {
+    background: var(--ink);
+    color: var(--bg-primary);
+}
+
+.form-message-error {
+    background: var(--bg-secondary);
+    color: var(--ink);
+}
+
+.form-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem 1.6rem;
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 10px;
+    color: var(--bg-primary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(20,20,20,0.14), var(--brutal-offset);
+    font-family: inherit;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(20,20,20,0.16);
+}
+
+.form-submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.submit-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(232, 232, 232, 0.3);
+    border-top-color: var(--bg-primary);
+    border-radius: 50%;
+    animation: spin 0.6s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form-wrapper {
+        padding: 2rem 1.5rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .contact-form-title {
+        font-size: 1.5rem;
+    }
+}

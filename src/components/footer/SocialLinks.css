@@ -1,0 +1,94 @@
+.social-links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(242, 242, 242, 0.06);
+    border: 1px solid rgba(242, 242, 242, 0.14);
+    border-radius: 10px;
+    color: #f2f2f2;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    backdrop-filter: blur(4px);
+}
+
+.social-link:hover {
+    transform: translateY(-1px);
+    background: var(--ink);
+    color: var(--bg-primary);
+    border-color: var(--ink);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.18), 1.5px 1.5px 0 rgba(242,242,242,0.08);
+}
+
+.social-link-icon {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: currentColor;
+    transition: all 0.15s ease;
+}
+
+.social-link:hover .social-link-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.social-link-tooltip {
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.38rem 0.7rem;
+    background: var(--ink);
+    border: 1px solid var(--ink);
+    border-radius: 8px;
+    color: var(--bg-primary);
+    font-size: 0.72rem;
+    font-weight: 600;
+    white-space: nowrap;
+    pointer-events: none;
+    animation: tooltipFadeIn 0.3s ease-out;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.social-link-tooltip::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: var(--ink);
+}
+
+@keyframes tooltipFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        justify-content: center;
+    }
+
+    .social-link {
+        width: 42px;
+        height: 42px;
+    }
+}

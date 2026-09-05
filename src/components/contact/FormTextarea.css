@@ -1,0 +1,61 @@
+.form-textarea-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-textarea-container {
+    position: relative;
+    display: flex;
+}
+
+.form-textarea-icon {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    display: flex;
+    align-items: center;
+    color: var(--ink-faint);
+    transition: color 0.15s ease;
+    z-index: 1;
+}
+
+.form-textarea-container.focused .form-textarea-icon,
+.form-textarea-container.filled .form-textarea-icon {
+    color: var(--ink);
+}
+
+.form-textarea {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    color: var(--ink);
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    outline: none;
+    resize: none;
+    min-height: 120px;
+    box-shadow: 0 1px 2px rgba(20,20,20,0.03);
+}
+
+.form-textarea::placeholder {
+    color: var(--ink-faint);
+}
+
+.form-textarea:focus {
+    background: var(--bg-secondary);
+    border-color: var(--line);
+    box-shadow: 0 4px 14px rgba(20,20,20,0.06);
+}
+
+.form-textarea-wrapper.has-error .form-textarea {
+    border-color: var(--ink);
+    border-style: dashed;
+}
+
+.form-textarea-wrapper.has-error .form-textarea-icon {
+    color: var(--ink);
+}

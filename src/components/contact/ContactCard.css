@@ -1,0 +1,101 @@
+.contact-card-compact {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1.05rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--line-soft);
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+    position: relative;
+}
+
+.contact-card-compact:hover {
+    border-color: var(--line);
+    box-shadow: 0 4px 16px rgba(20,20,20,0.06);
+    transform: translateY(-1px);
+}
+
+.card-icon-mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: var(--bg-muted);
+    border: 1px solid var(--line-soft);
+    border-radius: 10px;
+    color: var(--ink-soft);
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.contact-card-compact:hover .card-icon-mini {
+    background: var(--bg-secondary);
+    border-color: var(--line);
+    transform: translateY(-1px);
+}
+
+.card-info-mini {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.card-label-mini {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ink-faint);
+    font-weight: 700;
+}
+
+.card-value-mini {
+    font-size: 0.9rem;
+    color: var(--ink);
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s;
+}
+
+.card-value-mini:hover {
+    color: var(--ink);
+    text-decoration: underline;
+}
+
+.card-actions-mini {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.action-btn-mini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--line-soft);
+    border-radius: 8px;
+    color: var(--ink-soft);
+    cursor: pointer;
+    transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.action-btn-mini:hover {
+    background: var(--ink);
+    color: var(--bg-primary);
+    border-color: var(--ink);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(20,20,20,0.12);
+}
+
+.action-btn-mini.copied {
+    background: var(--ink);
+    color: var(--bg-primary);
+    border-color: var(--ink);
+}

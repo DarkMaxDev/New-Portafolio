@@ -1,0 +1,58 @@
+.education-section {
+    position: relative;
+    padding: 6rem 0 4rem;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+.education-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    position: relative;
+    z-index: 2;
+}
+
+.education-timeline {
+    position: relative;
+    padding: 1rem 0;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: linear-gradient(to bottom, transparent 0%, var(--line-strong) 12%, var(--line-strong) 88%, transparent 100%);
+    opacity: 0.55;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 1024px) {
+    .education-section {
+        padding: 3rem 0 2rem;
+    }
+
+    .education-container {
+        padding: 0 2rem;
+    }
+
+    .timeline-line {
+        left: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-section {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .education-container {
+        padding: 0 1.5rem;
+    }
+
+    .timeline-line {
+        left: 1.5rem;
+    }
+}

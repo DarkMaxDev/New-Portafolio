@@ -1,0 +1,99 @@
+import {memo, useCallback, useState} from 'react';
+import {motion} from 'motion/react';
+import PropTypes from 'prop-types';
+import './ContactCard.css';
+import {CONTACT_ICONS} from "../../utils/Icons.jsx";
+import {EASE} from '../../utils/motionVariants';
+
+const ActionButton = memo(({onClick, href, title, icon, className = ""}) => {
+    const commonProps = {
+        className: `action-btn-mini ${className}`, title, 'aria-label': title
+    };
+
+    if (href) {
+        return (<a href={href} {...commonProps} target="_blank" rel="noopener noreferrer">
+                {icon}
+            </a>);
+    }
+
+    return (<button onClick={onClick} {...commonProps} type="button">
+            {icon}
+        </button>);
+});
+
+ActionButton.displayName = 'ActionButton';
+
+const ContactCard = ({method, index}) => {
+    const [isCopied, setIsCopied] = useState(false);
+
+    const {id, icon, title, value, action} = method;
+
+    const handleCopy = useCallback(async (e) => {
+        e.preventDefault();
+        if (!value) return;
+
+        try {
+            await navigator.clipboard.writeText(value);
+            setIsCopied(true);
+            setTimeout(() => setIsCopied(false), 2000);
+        } catch {
+            // Handle error if needed
+        }
+    }, [value]);
+
+    const canCopy = id === 'email' || id === 'phone';
+
+    return (<motion.div
+            className="contact-card-compact"
+            initial={{opacity: 0, x: -24}}
+            whileInView={{opacity: 1, x: 0}}
+            whileHover={{x: -2, y: -2}}
+            viewport={{once: true, amount: 0.3}}
+            transition={{duration: 0.45, ease: EASE, delay: index * 0.1}}
+        >
+            <div className="card-icon-mini">
+                {icon}
+            </div>
+
+            <div className="card-info-mini">
+                <span className="card-label-mini">{title}</span>
+                <a
+                    href={action?.href}
+                    className="card-value-mini"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {value}
+                </a>
+            </div>
+
+            <div className="card-actions-mini">
+                {canCopy && (<ActionButton
+                        onClick={handleCopy}
+                        className={isCopied ? 'copied' : ''}
+                        title="Copy to clipboard"
+                        icon={isCopied ? CONTACT_ICONS.CHECK : CONTACT_ICONS.COPY}
+                    />)}
+
+                <ActionButton
+                    href={action?.href}
+                    title="Open link"
+                    icon={CONTACT_ICONS.EXTERNAL_LINK}
+                />
+            </div>
+        </motion.div>);
+};
+
+ContactCard.propTypes = {
+    method: PropTypes.shape({
+        id: PropTypes.string.isRequired,
+        icon: PropTypes.node,
+        title: PropTypes.string,
+        value: PropTypes.string,
+        action: PropTypes.shape({
+            href: PropTypes.string
+        })
+    }).isRequired, index: PropTypes.number.isRequired
+};
+
+export default memo(ContactCard);

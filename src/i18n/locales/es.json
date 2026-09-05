@@ -1,0 +1,241 @@
+{
+  "loader": {
+    "message": "CARGANDO RECURSOS..."
+  },
+  "nav": {
+    "home": "Inicio",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "education": "Educación",
+    "experience": "Experiencia",
+    "contact-me": "Contáctame"
+  },
+  "hero": {
+    "status": "Disponible para oportunidades",
+    "greeting": "Mi nombre es",
+    "subtitle1": "Ingeniero de Desarrollo Full-Stack ",
+    "subtitle2": "aespecializado en crear aplicaciones web,",
+    "subtitle3": "eficientes y preparadas para el futuro."
+
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "Tecnologías y herramientas que domino para construir soluciones completas",
+    "filters": {
+      "all": "Todos",
+      "languages": "Lenguajes",
+      "frameworks": "Frameworks",
+      "databases": "Base de datos",
+      "tools": "Herramientas",
+      "others": "Otros",
+      "softskills": "Habilidades blandas"
+    },
+    "softskillsList": {
+      "communication": "Comunicación",
+      "teamwork": "Trabajo en Equipo",
+      "problemSolving": "Resolución de Problemas",
+      "adaptability": "Adaptabilidad",
+      "timeManagement": "Gestión del Tiempo",
+      "creativity": "Creatividad"
+    },
+    "showMore": "Mostrar Más",
+    "showLess": "Mostrar Menos"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Explorando los límites del desarrollo moderno",
+    "numberLabel": "PROYECTO",
+    "technologiesLabel": "Tecnologías Utilizadas",
+    "seeCode": "Código Fuente",
+    "seeLive": "Ver Demo",
+    "allFilter": "Todos",
+    "techFilter": "Tecnologías",
+    "filterCat": {
+        "web": "Web",
+        "mobile": "Mobile"
+    },
+    "noResults": "No se encontraron proyectos con ese filtro",
+    "showMore": "Ver Más",
+    "showLess": "Ver Menos",
+    "placeholder": {
+
+        "title": "Más proyectos en camino",
+        "text": "Estoy trabajando en nuevos proyectos que serán añadidos próximamente.",
+        "badge": "EN PRODUCCIÓN"
+    },
+    "items": {
+      "skillshare_landing": {
+        "description": "Plataforma Full-Stack de videos de anime en emisiones y películas, con funcionalidades de búsqueda, filtrado, visualización de detalles y reproducción de contenido, con conexion a backend para gestión de usuarios y contenido.",
+        "status": "EN PRODUCCIÓN"
+      },
+      "STREAMAPP": {
+        "description": "Aplicación web para explorar un catálogo de películas y series de televisión. Detalles, tráileres, información del reparto, escenas, distribuidores y mucho más.",
+        "status": "EN PRODUCCIÓN"
+      }
+    }
+  },
+  "education": {
+    "badge": "Formación Académica",
+    "title": "Certificaciones",
+    "titleHighlight": "Educación &",
+    "subtitle": "Mi trayectoria académica y de formación continua en ingeniería de software, seguridad y tecnologías modernas.",
+    "status": {
+      "ongoing": "En Curso",
+      "completed": "Completado"
+    },
+    "skills": "Habilidades",
+    "viewCertificate": "Ver Certificado",
+    "openAsModal": "Abrir como modal",
+    "items": {
+      "Tescha": {
+        "description": "Estudio Continuo en Sistemas Computacionales, abarcando desde fundamentos de programación hasta desarrollo avanzado de aplicaciones, con enfoque en metodologías ágiles y mejores prácticas de desarrollo.",
+        "skills": [
+          "Trabajo en Equipo",
+          "Creacion de Backend",
+          "Creacion de Frontend",
+          "Proyecto de titulacion",
+          "Seguridad de los datos"
+        ]
+      },
+      "Cecytem": {
+        "description": "Desarrollador Full-Stack en java mediante el IDE netbeans en el cual se desarrollo un sofware de venta de flores con herramientas como apache para las bases de datos y una infertaz grafica para los usuarios.",
+        "skills": [
+          "Manejo de bases de datos",
+          "creacion de vista para los usuarios",
+          "Gestion de productos y ventas",
+          "Contruccion de aplicacion en java"
+        ]
+      }
+    }
+  },
+  "experience": {
+    "badge": "Trayectoria Profesional",
+    "title": "Experiencia",
+    "titleHighlight": "Laboral",
+    "subtitle": "Mi recorrido profesional en el desarrollo de software, donde he convertido desafíos en soluciones digitales.",
+    "current": "Actual",
+    "type": {
+      "fulltime": "Tiempo Completo",
+      "freelance": "Freelance",
+      "internship": "Prácticas",
+      "parttime": "Medio Tiempo"
+    },
+    "technologies": "Tecnologías",
+    "items": {
+      "Grupo-Salinas": {
+        "description": "Validar que las certificaciones de los productos en aws vayan de la mano con la validacion de los tickets y ayudar en la solucion de insidencias.",
+        "achievements": [
+          "Posicion de becario en el area de programacion, donde se realizo la certificacion de Observabilidad y Cumplimiento: Implementación de sistemas de monitoreo, observabilidad y auditoría de cambios para garantizar el cumplimiento de SLAs y normativas de seguridad.",
+          "Arquitectura en la Nube y Seguridad: Diseño de entornos de red aislados y gestión de identidades (IAM) bajo el paradigma de seguridad Zero Trust en AWS.",
+          "Automatización de Procesos y DevOps: Implementación de pipelines CI/CD para despliegue automatizado de aplicaciones y servicios en la nube, utilizando herramientas como AWS CodePipeline y AWS CodeBuild.",
+          " Infraestructura como Código (IaC): Despliegue de arquitecturas multicapa automatizadas mediante plantillas de AWS CloudFormation, asegurando consistencia, repetibilidad y trazabilidad en el entorno."
+        ]
+      },
+      "Dixy-Project": {
+        "description": "Desarrollo y mantenimiento de aplicaciones web para la gestión de procesos empresariales, trabajando con tecnologías modernas en un entorno colaborativo.",
+        "achievements": [
+          "Desarrollé y mantuve aplicaciones web para la gestión de procesos empresariales",
+          "Implementé funcionalidades para un sistema de gestión con módulos de ventas, compras, productos, almacenes y administración de usuarios",
+          "Desarrollé nuevas funcionalidades, realicé mantenimiento correctivo y optimización del rendimiento de las aplicaciones",
+          "Diseñé, implementé y mantuve bases de datos, asegurando la integridad de la información",
+          "Desarrollé el módulo de Recursos Humanos para un sistema de gestión del sector bancario",
+          "Realicé integración entre frontend, backend y base de datos para garantizar el correcto funcionamiento",
+          "Corregí incidencias, realicé pruebas de funcionalidades y colaboré con el equipo para la mejora continua"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "badge": "¡Trabajemos juntos!",
+    "title": "¿Tienes un proyecto en mente?",
+    "titleHighlight": "Conversemos",
+    "subtitle": "Estoy disponible para nuevos proyectos y colaboraciones. No dudes en contactarme y trabajar juntos en algo increíble.",
+    "email": {
+      "title": "Correo Electrónico",
+      "description": "Respondo en menos de 24 horas",
+      "action": "Enviar Email"
+    },
+    "phone": {
+      "title": "Teléfono",
+      "description": "Lun a Vie de 9am a 6pm",
+      "action": "Llamar Ahora"
+    },
+    "location": {
+      "title": "Ubicación",
+      "description": "Ciudad de Mexico, Mexico - GMT-6",
+      "action": "Ver en Mapa"
+    },
+    "social": {
+      "title": "Encuéntrame en redes sociales"
+    },
+    "availability": {
+      "label": "Tiempo de respuesta",
+      "value": "Usualmente dentro de 24 horas"
+    },
+    "form": {
+      "title": "Envíame un mensaje",
+      "description": "Completa el formulario y me pondré en contacto contigo lo antes posible.",
+      "name": "Nombre completo",
+      "email": "Correo electrónico",
+      "subject": "Asunto",
+      "message": "Mensaje",
+      "submit": "Enviar Mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado exitosamente! Te responderé pronto.",
+      "error": "Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.",
+      "errors": {
+        "nameRequired": "El nombre es requerido",
+        "nameMin": "El nombre debe tener al menos 2 caracteres",
+        "emailRequired": "El correo electrónico es requerido",
+        "emailInvalid": "Por favor, ingresa un correo válido",
+        "subjectRequired": "El asunto es requerido",
+        "messageRequired": "El mensaje es requerido",
+        "messageMin": "El mensaje debe tener al menos 10 caracteres"
+      }
+    }
+  },
+  "terminal": {
+    "loading": {
+      "connecting": "Conectando con {url}...",
+      "tunnel": "Estableciendo túnel de transferencia seguro...",
+      "installing": "Instalando portafolio..."
+    },
+    "success": "¡Instalación completada con éxito!",
+    "header": {
+      "shell": "DarkMaxDev Shell [Versión 2.5.0-Release]",
+      "env": "Entorno virtualizado vinculado a",
+      "tagline": "Sistemas de Información & Software de Alto Rendimiento.",
+      "starting": "Iniciando componentes básicos del sistema..."
+    },
+
+
+    "status": "Proyectos activos:\n  - STREAMAPP       : Plataforma de streaming y archivos de series (Api-CRUD).\n  - Portfolio : Pagina Full-Stackde alto rendimiento y diseño minimalista.",
+    "about": "Licenciado en Ingeniería en sistemas computacionales en la Universidad Tecnologico De Estudios Superiores De Chalco(TESCHA).",
+    "ls": "Secciones del portafolio:\n  Skills        Competencias técnicas y profesionales\n  Projects      Proyectos destacados\n  Education     Formación académica y certificaciones\n  Experience    Experiencia laboral\n  Contact       Ponte en contacto conmigo",
+    "skills": "Categorías de habilidades:\n  Languages     JavaScript, Java, SQL, Dart\n  Frameworks    React, Node.js, Flutter, Express, Spring Boot\n  Databases     MongoDB, MySQL, PostgreSQL\n  Tools         Git, Docker, Linux, Figma, Postman\n  Soft Skills   Comunicación, Trabajo en Equipo, Resolución de Problemas, Adaptabilidad",
+    "projects": "Proyectos destacados:\n  AnimeWeb           Plataforma de streaming de anime disponible para el publico.\n  STREAMAPP       Plataforma de streaming y backend para películas\n  TakeOver       E-commerce de venta de prodcutos de tecnologia",
+    "education": "Formación académica:\n  Ingeniero en Sistemas computacionales - TESCHA (2018-2024)\n  Tecnico en programacion (CECYTEM) (2015-2018)\n  Fundamentos de Scrum (2024)\n  MongoDB (2024)\n\nEscribe 'help' para ver comandos disponibles.",
+    "experience": "Experiencia laboral:\n  Desarrollador Web - Dixi project (03/2023-09/2023)\n  Desarrollador Full Stack - TakeOver (10/2024-10-2025)\n\nEscribe 'help' para ver comandos disponibles.",
+    "contact": "Ponte en contacto:\n  Email    gustavomaximiliano1@gmail.com\n  Ubicación Lima, Perú (GMT-5)\n  GitHub   https://github.com/DarkMaxDev\n  LinkedIn https://mx.linkedin.com/in/gustavo-maximiliano-aguila-b641462a2",
+    "social": "Redes sociales:\n  GitHub    https://github.com/DarkMaxDev\n  LinkedIn  https://www.linkedin.com/in/gustavo-maximiliano-aguila-b641462a2\n Instagram  https://www.instagram.com/darkmax_gg/",
+    "uname": "PortfolioOS 2.5.0-release #1 SMP PREEMPT\n visitor@portfolio ~/ \n Arquitectura: React 19 + Vite 8\n Kernel: Estándares Web Modernos, GNU/Linux-ish",
+    "banner": "\u2554\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2557\n\u2551          Gustavo Maximiliano - PORTFOLIO v2.5          \u2551\n\u2551        Desarrollador Full-Stack         \u2551\n\u255a\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u2550\u255d",
+    "help": "Comandos disponibles:\n  whoami       Muestra mi identidad\n  status       Lista los proyectos actuales\n  about        Información académica\n  age          Fecha de cumpleaños\n  pwd          Muestra el directorio actual\n  ls           Lista las secciones del portafolio\n  skills       Muestra habilidades técnicas\n  projects     Lista proyectos destacados\n  education    Muestra formación académica\n  experience   Muestra experiencia laboral\n  contact      Muestra información de contacto\n  social       Muestra redes sociales\n  repo         URL del repositorio del portafolio\n  version      Muestra la versión del shell\n  uptime       Muestra el tiempo de sesión transcurrido\n  uname        Muestra información del sistema\n  banner       Muestra el banner ASCII\n  sudo         Intenta privilegios de superusuario\n  date         Muestra la fecha y hora actual\n  echo         Imprime un mensaje personalizado (Ej: echo hola)\n  cls/clear    Limpia el historial de comandos\n  exit         Cierra el intérprete",
+    "unknown": "'{{cmd}}' no se reconoce como un comando interno o externo,\nprograma o archivo por lotes ejecutable.\nEscribe 'help' para ver los comandos válidos.",
+    "exit": "Sesión interactiva finalizada. El intérprete se ha cerrado de forma segura.\nPuedes recargar la página para iniciar una nueva sesión."
+  },
+  "footer": {
+    "tagline": "Desarrollador web Full-Stack apasionado por crear experiencias digitales excepcionales. Transformando ideas en código limpio y funcional.",
+    "available": "Disponible para oportunidades",
+    "navigation": "Navegación",
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "resume": "Currículum",
+    "contactLabels": {
+        "email": "Correo Electrónico",
+        "location": "Ubicación",
+        "phone": "Teléfono"
+    },
+    "rights": "Todos los derechos reservados."
+  }
+}

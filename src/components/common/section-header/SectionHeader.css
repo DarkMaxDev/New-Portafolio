@@ -1,0 +1,112 @@
+.section-header {
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.section-header--center {
+    text-align: center;
+}
+
+.section-header--center .section-subtitle {
+    margin: 0 auto;
+}
+
+.section-header--left {
+    text-align: left;
+}
+
+/* ── Kicker editorial (mono) ── */
+.section-kicker {
+    display: block;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 0.9rem;
+}
+
+/* ── Badge ── */
+.section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.38rem 0.85rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--line-strong);
+    border-radius: var(--radius-pill);
+    color: var(--ink-soft);
+    margin-bottom: 1.15rem;
+}
+
+.section-badge svg {
+    width: 16px;
+    height: 16px;
+    opacity: 0.9;
+}
+
+.section-badge-text {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+/* ── Title ── */
+.section-title {
+    font-size: var(--title-size);
+    font-weight: 750;
+    line-height: 0.98;
+    letter-spacing: -0.035em;
+    margin-bottom: 0.85rem;
+}
+
+.section-title-main {
+    color: var(--text-primary);
+}
+
+.section-title-gradient {
+    color: var(--ink);
+}
+
+.section-header--stacked .section-title-main,
+.section-header--stacked .section-title-gradient {
+    display: block;
+}
+
+.section-header--highlight-first .section-title-gradient + .section-title-main {
+    margin-top: 0.25rem;
+}
+
+/* ── Subtitle ── */
+.section-subtitle {
+    font-size: var(--subtitle-size);
+    color: var(--text-secondary);
+    max-width: 560px;
+    line-height: 1.65;
+    font-weight: 400;
+}
+
+/* ── Responsive ── */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: var(--title-size-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    .section-title {
+        font-size: var(--title-size-sm);
+    }
+
+    .section-subtitle {
+        font-size: var(--subtitle-size-sm);
+    }
+}
+
+
