@@ -150,7 +150,7 @@ const Terminal = () => {
             body.appendChild(loadingDiv);
 
             const connectMsg = t('terminal.loading.connecting');
-            loadingDiv.innerHTML = `${connectMsg} <a href="https://portafolio-astro-naew.vercel.app/" target="_blank" rel="noopener noreferrer" class="term-url">https://portafolio-astro-naew.vercel.app/</a>...<br>`;
+            loadingDiv.innerHTML = `${connectMsg} <a href="https://new-portafolio.onrender.com/" target="_blank" rel="noopener noreferrer" class="term-url">https://new-portafolio.onrender.com/</a>...<br>`;
             scrollToBottom();
             await delay(600);
             loadingDiv.innerHTML += `<span class="term-muted">${t('terminal.loading.tunnel')}</span><br>`;
@@ -193,7 +193,7 @@ const Terminal = () => {
             header.style.fontSize = '13px';
             header.innerHTML = [
                 `<span class="term-accent">${t('terminal.header.shell')}</span>`,
-                `${t('terminal.header.env')} <a href="https://portafolio-astro-naew.vercel.app/" target="_blank" rel="noopener noreferrer" class="term-url">https://portafolio-astro-naew.vercel.app/</a>`,
+                `${t('terminal.header.env')} <a href="https://new-portafolio.onrender.com/" target="_blank" rel="noopener noreferrer" class="term-url">https://new-portafolio.onrender.com/</a>`,
                 `<span class="term-muted">${t('terminal.header.tagline')}</span>`,
                 '',
                 `<span class="term-muted">${t('terminal.header.starting')}</span>`,

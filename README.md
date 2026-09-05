@@ -10,7 +10,7 @@
 
 **Portafolio web interactivo y moderno desarrollado con React, Vite, Motion y OGL.**
 
-[Ver Demo en Vivo](https://jhosep-ac.pages.dev/) · [Reportar un Error](https://github.com/JhosepAC/my-portfolio/issues) · [Solicitar una Mejora](https://github.com/JhosepAC/my-portfolio/issues)
+[Ver Demo en Vivo](https://new-portafolio.onrender.com/)
 
 </div>
 
@@ -97,7 +97,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 
 1. **Clonar el repositorio:**
    ```bash
-   git clone https://github.com/JhosepAC/my-portfolio.git
+   git clone https://github.com/DarkMaxDev/New-Portafolio.git
    cd my-portfolio
    ```
 
@@ -127,7 +127,7 @@ Sigue estos pasos para clonar y ejecutar el proyecto en tu entorno local:
 ## 📬 Contacto
 
 - **Nombre**: Gustavo Maximiliano
-- **Sitio Web**: [https://jhosep-ac.pages.dev/](https://jhosep-ac.pages.dev/)
+- **Sitio Web**: [https://new-portafolio.onrender.com/](https://new-portafolio.onrender.com/)
 - **GitHub**: [DarkMaxDev](https://github.com/DarkMaxDev)
 - **LinkedIn**: [Gustavo Maximiliano](mx.linkedin.com/in/gustavo-maximiliano-aguila-b641462a2)
 
