@@ -25,9 +25,9 @@ export const PROJECTS_DATA = [
     },
     {
         id: 2,
-        category: 'Clone Netflix',
+        category: 'Clon de Netflix',
         statusKey: 'production',
-        title: 'Full-Stack Netflix Clone',
+        title: 'Clon de Netflix Full-Stack',
         image: CloneNetflixImg,
         technologies: [
             {name: 'Next.js', icon: <Icon icon="simple-icons:nextdotjs"/>},
