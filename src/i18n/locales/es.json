@@ -62,7 +62,7 @@
       "badge": "EN PRODUCCIÓN"
     },
     "items": {
-      "skillshare_landing": {
+      "AnimeWeb": {
         "description": "Plataforma Full-Stack de videos de anime en emisión y películas, con funcionalidades de búsqueda, filtrado, visualización de detalles y reproducción de contenido, con conexión a backend para gestión de usuarios y contenido.",
         "status": "EN PRODUCCIÓN"
       },
