@@ -156,6 +156,8 @@ const GlobalGrid = () => {
                         className="cursor-circle"
                         style={{
                             position: 'fixed',
+                            top: 0,
+                            left: 0,
                             pointerEvents: 'none',
                             zIndex: 99999,
                             width: '40px',
@@ -174,6 +176,8 @@ const GlobalGrid = () => {
                         className="cursor-dot"
                         style={{
                             position: 'fixed',
+                            top:0,
+                            left:0,
                             pointerEvents: 'none',
                             zIndex: 99999,
                             width: '6px',

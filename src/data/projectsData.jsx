@@ -7,9 +7,9 @@ import React from "react";
 export const PROJECTS_DATA = [
   {
     id: 1,
-    category: "Full-Stack AnimeWeb",
+    category: "Streaming",
     statusKey: "production",
-    title: "Plataforma de Anime Web Full-Stack",
+    title: "Plataforma de Anime Web Full-Stack AnimeWeb",
     image: skillshareLandingImg,
     technologies: [
       { name: "HTML5", icon: <Icon icon="simple-icons:html5" /> },
@@ -22,13 +22,13 @@ export const PROJECTS_DATA = [
     ],
     github: "https://github.com/DarkMaxDev/FrontendAnimeWeb/tree/main",
     live: "https://frontend-anime-web.vercel.app/",
-    labelTranslate: "skillshare_landing",
+    labelTranslate: "AnimeWeb",
   },
   {
     id: 2,
-    category: "Clone Netflix",
+    category: "Streaming",
     statusKey: "production",
-    title: "Full-Stack Netflix Clone",
+    title: "Full-Stack Netflix Clone STREAMAPP",
     image: CloneNetflixImg,
     technologies: [
       { name: "Next.js", icon: <Icon icon="simple-icons:nextdotjs" /> },
@@ -44,9 +44,9 @@ export const PROJECTS_DATA = [
   },
   {
     id: 3,
-    category: "Ecommerce-Coffe",
+    category: "E-commerce",
     statusKey: "production",
-    title: "Full-Stack Ecommerce-coffe",
+    title: "Full-Stack Ecommerce-coffe COFFE-VOLCANES",
     image: coffeImg,
     technologies: [
       { name: "vite", icon: <Icon icon="simple-icons:vite" /> },

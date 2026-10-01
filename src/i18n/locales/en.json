@@ -50,8 +50,8 @@
     "allFilter": "All",
     "techFilter": "Technologies",
     "filterCat": {
-      "web": "Web",
-      "mobile": "Mobile"
+      "Streaming": "Streaming",
+      "E-commerce": "E-commerce"
     },
     "noResults": "No projects found matching that filter",
     "showMore": "Show More",
@@ -62,12 +62,16 @@
       "badge": "IN PRODUCTION"
     },
     "items": {
-      "skillshare_landing": {
+      "AnimeWeb": {
         "description": "Full-Stack platform for ongoing anime series and movies, featuring search, filtering, detailed views, and content playback, integrated with a backend for user and content management.",
         "status": "IN PRODUCTION"
       },
       "STREAMAPP": {
         "description": "Web application to explore a catalog of movies and TV series. Includes details, trailers, cast information, scenes, distributors, and much more.",
+        "status": "IN PRODUCTION"
+      },
+      "COFFE": {
+        "description": "Full-stack e-commerce platform for selling regional coffees, featuring a shopping cart, product management, payment processing, user administration, and sales charts.",
         "status": "IN PRODUCTION"
       }
     }

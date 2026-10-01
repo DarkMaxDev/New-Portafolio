@@ -50,8 +50,8 @@
     "allFilter": "Todos",
     "techFilter": "Tecnologías",
     "filterCat": {
-      "web": "Web",
-      "mobile": "Móvil"
+      "Streaming": "Entretenimiento",
+      "E-commerce": "Comercio Electrónico"
     },
     "noResults": "No se encontraron proyectos con ese filtro",
     "showMore": "Ver más",
@@ -68,6 +68,10 @@
       },
       "STREAMAPP": {
         "description": "Aplicación web para explorar un catálogo de películas y series de televisión. Detalles, tráileres, información del reparto, escenas, distribuidores y mucho más.",
+        "status": "EN PRODUCCIÓN"
+      },
+      "COFFE": {
+        "description": "E-commerce Full-Stack de venta de cafes regionales, con funcionalidades de carrito de compras, gestión de productos, pagos y administración de usuarios, y grafica de ventas.",
         "status": "EN PRODUCCIÓN"
       }
     }
