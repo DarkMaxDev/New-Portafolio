@@ -52,20 +52,19 @@ export const SKILLS_DATA = {
     {name: 'MariaDB', icon: 'mariadb'},
     {name: 'SQL Server', icon: 'sqlserver'}, 
     {name: 'MongoDB', icon: 'mongodb'},],
-    frameworks: [{name: 'Next.js', icon: 'nextjs'}, {
-        name: 'React', icon: 'react'
-    }, {name: 'Astro', icon: 'astro'},
+    frameworks: [{name: 'Next.js', icon: 'nextjs'},
+    {name: 'React', icon: 'react'},
+    {name: 'Astro', icon: 'astro'},
     {name: 'Vue', icon: 'vue'}, 
     {name: 'Tailwind', icon: 'headlessui'}],
-    tools: [{name: 'GitHub', icon: 'github'}, {
-        name: 'Git', icon: 'git'
-    }, {name: 'Linux', icon: 'linux'}, {
-        name: 'Azure', icon: 'azure'
-    }, {
-        name: 'MongoDB', icon: 'mongodb'
-    }, {name: 'MariaDB', icon: 'mariadb'}, {name: 'postgreSQL', icon: 'postgresql'},],
-    others: [{
-        name: 'Scrum', icon: 'simple-icons:scrumalliance', iconType: 'iconify'
+    tools: [{name: 'GitHub', icon: 'github'},
+    {name: 'Git', icon: 'git'},
+    {name: 'Linux', icon: 'linux'}, 
+    {name: 'Azure', icon: 'azure'},
+    {name: 'MongoDB', icon: 'mongodb'},
+    {name: 'MariaDB', icon: 'mariadb'},
+    {name: 'postgreSQL', icon: 'postgresql'},],
+    others: [{name: 'Scrum', icon: 'simple-icons:scrumalliance', iconType: 'iconify'
     }, {
         name: 'User Stories', icon: 'mdi:clipboard-text-outline', iconType: 'iconify'
     }, {name: 'Agile', icon: 'mdi:sync', iconType: 'iconify'}],
