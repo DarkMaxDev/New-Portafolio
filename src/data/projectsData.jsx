@@ -59,7 +59,7 @@ export const PROJECTS_DATA = [
       { name: "redis", icon: <Icon icon="simple-icons:redis" /> },
     ],
     github: "https://github.com/DarkMaxDev/E-commece-Coffe-Backend",
-    live: "https://e-commece-coffe-backend.vercel.app/",
+    live: "hhttps://e-commece-coffe-backend-1.onrender.com/",
     labelTranslate: "COFFE",
   },
 ];

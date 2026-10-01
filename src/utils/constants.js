@@ -137,5 +137,4 @@ export const EXPERIENCE_DATA = [{
     type: 'parttime',
     iconType: 'work',
     technologies: ['.NET CORE', 'C#', 'Git', 'Figma', 'SQL Server'],
-    Certificacion: 'Certificacion.pdf'
 }];
