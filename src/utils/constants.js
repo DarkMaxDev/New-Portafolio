@@ -40,24 +40,23 @@ export const SOCIAL_LINKS = [{
 }];
 
 export const SKILLS_DATA = {
-    languages: [{name: 'JavaScript', icon: 'javascript'}, {
-        name: 'TypeScript', icon: 'typescript'
-    }, {name: 'Astro', icon: 'astro'}, {name: 'Flutter', icon: 'flutter'}, 
-    {name: 'HTML5', icon: 'html'}, {
-        name: 'CSS3', icon: 'css'
-    },{
-        name: 'Springboot', icon: 'springboot'
-    },{
-        name: 'Java', icon: 'java'
-    },],
-    databases: [{name: 'MySQL', icon: 'mysql'}, {
-        name: 'MariaDB', icon: 'mariadb'
-    }, {name: 'SQL Server', icon: 'sqlserver'}, {
-        name: 'MongoDB', icon: 'mongodb'
-    },],
+    languages: [{name: 'JavaScript', icon: 'javascript'},
+    {name: 'TypeScript', icon: 'typescript'},
+    {name: 'Flutter', icon: 'flutter'}, 
+    {name: 'Node.js', icon: 'nodejs'}, 
+    {name: 'HTML5', icon: 'html'}, 
+    {name: 'CSS3', icon: 'css'},
+    {name: 'Springboot', icon: 'springboot'},
+    {name: 'Java', icon: 'java'},],
+    databases: [{name: 'MySQL', icon: 'mysql'},
+    {name: 'MariaDB', icon: 'mariadb'},
+    {name: 'SQL Server', icon: 'sqlserver'}, 
+    {name: 'MongoDB', icon: 'mongodb'},],
     frameworks: [{name: 'Next.js', icon: 'nextjs'}, {
         name: 'React', icon: 'react'
-    }, {name: 'Vue', icon: 'vue'}, {name: 'Node.js', icon: 'nodejs'}, {name: 'Tailwind', icon: 'headlessui'}],
+    }, {name: 'Astro', icon: 'astro'},
+    {name: 'Vue', icon: 'vue'}, 
+    {name: 'Tailwind', icon: 'headlessui'}],
     tools: [{name: 'GitHub', icon: 'github'}, {
         name: 'Git', icon: 'git'
     }, {name: 'Linux', icon: 'linux'}, {
