@@ -7,13 +7,8 @@ import useIsMobile from '../../hooks/useIsMobile';
 import {EASE} from '../../utils/motionVariants';
 import './TimelineItem.css';
 
-const CertificateModal = lazy(() => import("./CertificateModal.jsx"));
-const CertificateImageViewer = lazy(() => import("./CertificateImageViewer.jsx"));
-
 const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
     const {t} = useTranslation();
-    const [isModalOpen, setIsModalOpen] = useState(false);
-    const [isImageOpen, setIsImageOpen] = useState(false);
     const [showHint, setShowHint] = useState(false);
     const isMobile = useIsMobile();
 
@@ -37,7 +32,6 @@ const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
         toggleExpand(e);
     };
 
-    // Hint solo en primera card, esquina inferior derecha, cada 2s, hasta que se abra alguna card
     useEffect(() => {
         if (!isMobile || index !== 0 || isExpanded || hasOpenedAny) {
             setShowHint(false);
@@ -49,7 +43,6 @@ const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
         }, 2000);
         return () => clearInterval(interval);
     }, [isMobile, index, isExpanded, hasOpenedAny]);
-
     return (<motion.div
         className={`timeline-item ${item.type === 'university' ? 'timeline-item-important' : ''} ${isExpanded ? 'expanded' : ''}`}
         initial={{opacity: 0, y: 28}}
@@ -103,14 +96,12 @@ const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
                                     </span>
                         </>)}
                     </div>
-
                     <div className="card-meta">
                             <span className="card-date">
                                 {TIMELINE_ICONS.DATE} {item.date} {item.endDate && `- ${item.endDate}`}
                             </span>
                     </div>
                 </div>
-
                 <button
                     className="expand-button"
                     aria-label={isExpanded ? 'Collapse' : 'Expand'}
@@ -120,7 +111,6 @@ const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
                     {TIMELINE_ICONS.CHEVRON}
                 </button>
             </div>
-
             <div className="card-expanded">
                 <div className="expanded-wrapper">
                     <div className="expanded-content">
@@ -132,47 +122,6 @@ const TimelineItem = ({item, index, isExpanded, onToggle, hasOpenedAny}) => {
                                 {item.skills.map((skill, idx) => (<span key={idx} className="skill-tag">{skill}</span>))}
                             </div>
                         </div>
-
-                        {item.status === 'completed' && item.certificate && (
-                            <div className="certificate-wrapper">
-                                <motion.button
-                                    type="button"
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        if (isMobile && item.certificateImage) {
-                                            setIsImageOpen(true);
-                                        } else {
-                                            setIsModalOpen(true);
-                                        }
-                                    }}
-                                    className="certificate-button"
-                                    whileHover={{ y: -1 }}
-                                    whileTap={{ scale: 0.97 }}
-                                >
-                                    {TIMELINE_ICONS.CERT_FILE}
-                                    <span>{t('education.viewCertificate')}</span>
-                                </motion.button>
-
-                                <Suspense fallback={null}>
-                                    <CertificateModal
-                                        isOpen={isModalOpen}
-                                        onClose={() => setIsModalOpen(false)}
-                                        certificateUrl={item.certificate}
-                                        title={item.title || item.degree}
-                                    />
-                                    {item.certificateImage && (
-                                        <CertificateImageViewer
-                                            isOpen={isImageOpen}
-                                            onClose={() => setIsImageOpen(false)}
-                                            imageSrc={item.certificateImage}
-                                            title={item.title || item.degree}
-                                            onOpenModal={() => setIsModalOpen(true)}
-                                        />
-                                    )}
-                                </Suspense>
-                            </div>
-                        )}
-
                     </div>
                 </div>
             </div>
