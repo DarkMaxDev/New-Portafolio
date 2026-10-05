@@ -1,18 +1,17 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { LazyMotion, domMax, MotionConfig, AnimatePresence, motion } from 'motion/react';
+import { LazyMotion, domMax, MotionConfig } from 'motion/react';
 import Navbar from './components/common/nav-bar/Navbar.jsx';
 import Home from './pages/Home.jsx';
-import Loader from './components/common/loader/Loader.jsx';
 import GlobalParticles from './components/common/particles/GlobalParticles.jsx';
 import GlobalGrid from './components/common/grid/GlobalGrid.jsx';
-import { useLoading } from './hooks/useLoading.js';
 import { AppReadyContext } from './context/AppReadyContext.js';
 import { ThemeProvider } from './context/ThemeContext.jsx';
+import { Preloader } from './components/Preloader/Preloader.jsx';
 import './App.css';
 
 function App() {
-    const isLoading = useLoading();
+    const [isPreloaderDone, setIsPreloaderDone] = useState(false);
 
     useEffect(() => {
         if ('scrollRestoration' in history) {
@@ -28,35 +27,37 @@ function App() {
 
     return (
         <ThemeProvider>
-        <LazyMotion features={domMax} strict>
-            <MotionConfig reducedMotion="user">
-                <Router>
-                    <div className="App">
-                        <GlobalGrid />
-                        <GlobalParticles />
-                        <AnimatePresence>
-                            {isLoading && <Loader />}
-                        </AnimatePresence>
+            <LazyMotion features={domMax} strict>
+                <MotionConfig reducedMotion="user">
+                    <Router>
+                        <div className="App" style={{ minHeight: '100vh', backgroundColor: '#000' }}>
+                            {!isPreloaderDone && (
+                                <Preloader onComplete={() => setIsPreloaderDone(true)} />
+                            )}
 
-                        <AppReadyContext.Provider value={!isLoading}>
-                        <motion.main
-                            className={`app-content ${isLoading ? 'is-loading' : 'is-ready'}`}
-                            initial={false}
-                            animate={isLoading ? {opacity: 0} : {opacity: 1}}
-                            transition={{duration: 0.5, ease: 'easeOut'}}
-                        >
-                            <Navbar />
-                            <Routes>
-                                <Route path="/" element={<Home />} />
+                            <GlobalGrid />
+                            <GlobalParticles />
 
-                                <Route path="*" element={<Navigate to="/" replace />} />
-                            </Routes>
-                        </motion.main>
-                    </AppReadyContext.Provider>
-                    </div>
-                </Router>
-            </MotionConfig>
-        </LazyMotion>
+                            <AppReadyContext.Provider value={isPreloaderDone}>
+                                <main
+                                    className={`app-content ${isPreloaderDone ? 'is-ready' : 'is-loading'}`}
+                                    style={{
+                                        opacity: isPreloaderDone ? 1 : 0,
+                                        transition: 'opacity 0.8s ease-in-out',
+                                        pointerEvents: isPreloaderDone ? 'auto' : 'none'
+                                    }}
+                                >
+                                    <Navbar />
+                                    <Routes>
+                                        <Route path="/" element={<Home />} />
+                                        <Route path="*" element={<Navigate to="/" replace />} />
+                                    </Routes>
+                                </main>
+                            </AppReadyContext.Provider>
+                        </div>
+                    </Router>
+                </MotionConfig>
+            </LazyMotion>
         </ThemeProvider>
     );
 }
