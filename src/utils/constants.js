@@ -1,6 +1,5 @@
 import cvEn from '../assets/docs/CV_Maximiliano.pdf';
 import cvEs from '../assets/docs/CV_Maximiliano.pdf';
-import Certificacion from '../assets/docs/Certificacion.pdf';
 
 export const ASSETS = {
     CV_PATH_ES: cvEs, CV_NAME_ES: 'CV_Maximiliano.pdf',

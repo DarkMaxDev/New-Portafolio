@@ -15,10 +15,6 @@ import EducationSection from "../components/education/EducationSection.jsx";
 import ExperienceSection from "../components/experience/ExperienceSection.jsx";
 import ProjectsSection from "../components/projects/ProjectsSection.jsx";
 
-/**
- * Home Page Component
- * Main landing page containing the Hero section and Skills.
- */
 const Home = () => {
     const {t, i18n} = useTranslation();
     const ready = useAppReady();
@@ -78,7 +74,6 @@ const Home = () => {
         <div className="home-container">
             <section id="home" className="hero-section" ref={heroRef}>
                 <motion.div className="hero-content">
-                    {/* Availability Badge */}
                     <motion.div
                         className="status-badge"
                         initial={{opacity: 0, y: 24}}
