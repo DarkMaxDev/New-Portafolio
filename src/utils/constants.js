@@ -102,7 +102,7 @@ export const EDUCATION_DATA = [{
     iconType: 'university',
 }, {
     id: 'Cecytem',
-    year: '2025',
+    year: '2019',
     date: '08/2015-08/2018',
     title: 'Tecnico en Programacion',
     institution: 'CECYTEM ATLAUTLA',
