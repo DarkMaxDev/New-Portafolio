@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import CloneNetflixImg from "../assets/projects/CloneNetflix.png";
 import coffeImg from "../assets/projects/coffe.png";
 import skillshareLandingImg from "../assets/projects/WebAnime.png";
+import wuwaImg from "../assets/projects/Community_wuwa.png"
 import React from "react";
 
 export const PROJECTS_DATA = [
@@ -61,5 +62,23 @@ export const PROJECTS_DATA = [
     github: "https://github.com/DarkMaxDev/E-commece-Coffe-Backend",
     live: "https://e-commece-coffe-backend-1.onrender.com/",
     labelTranslate: "COFFE",
+  },,
+  {
+    id: 3,
+    category: "Community",
+    statusKey: "production",
+    title: "Full-Stack Community Wuthering Waves",
+    image: wuwaImg,
+    technologies: [
+      { name: "vite", icon: <Icon icon="simple-icons:vite" /> },
+      { name: "Next.js", icon: <Icon icon="simple-icons:Next.js" /> },
+      { name: "TypeScript", icon: <Icon icon="simple-icons:TypeScript" /> },
+      { name: "Tailwind", icon: <Icon icon="simple-icons:tailwindcss" /> },
+      { name: "MongoDB", icon: <Icon icon="simple-icons:MongoDB" /> },
+      { name: "Bcrypt", icon: <Icon icon="simple-icons:bcrypt" /> },
+    ],
+    github: "https://github.com/DarkMaxDev/Wuthering_Waves_Community/tree/main",
+    live: "https://wuthering-waves-community.onrender.com/",
+    labelTranslate: "COM_WUWA",
   },
 ];
