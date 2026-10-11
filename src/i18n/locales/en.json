@@ -75,8 +75,8 @@
         "description": "Full-stack e-commerce platform for selling regional coffees, featuring a shopping cart, product management, payment processing, user administration, and sales charts.",
         "status": "IN PRODUCTION"
       },
-      "COM_WUWA": {
-        "description": "Les comparto mi más reciente proyecto: una plataforma web full-stack creada por y para la comunidad de Wuthering Waves.",
+      "COMWUWA": {
+        "description": "I'm sharing my latest project with you: a full-stack web platform created by and for the Wuthering Waves community.",
         "status": "IN PRODUCTION"
       }
     }

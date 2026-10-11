@@ -50,6 +50,7 @@
     "allFilter": "Todos",
     "techFilter": "Tecnologías",
     "filterCat": {
+      "Community": "Comunidad",
       "Streaming": "Entretenimiento",
       "E-commerce": "Comercio Electrónico"
     },
@@ -73,6 +74,10 @@
       "COFFE": {
         "description": "E-commerce Full-Stack de venta de cafes regionales, con funcionalidades de carrito de compras, gestión de productos, pagos y administración de usuarios, y grafica de ventas.",
         "status": "EN PRODUCCIÓN"
+      },
+      "COMWUWA": {
+        "description": "Les comparto mi más reciente proyecto: una plataforma web full-stack creada por y para la comunidad de Wuthering Waves.",
+        "status": "IN PRODUCTION"
       }
     }
   },

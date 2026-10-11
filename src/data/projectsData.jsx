@@ -62,9 +62,9 @@ export const PROJECTS_DATA = [
     github: "https://github.com/DarkMaxDev/E-commece-Coffe-Backend",
     live: "https://e-commece-coffe-backend-1.onrender.com/",
     labelTranslate: "COFFE",
-  },,
+  },
   {
-    id: 3,
+    id: 4,
     category: "Community",
     statusKey: "production",
     title: "Full-Stack Community Wuthering Waves",
@@ -79,6 +79,6 @@ export const PROJECTS_DATA = [
     ],
     github: "https://github.com/DarkMaxDev/Wuthering_Waves_Community/tree/main",
     live: "https://wuthering-waves-community.onrender.com/",
-    labelTranslate: "COM_WUWA",
+    labelTranslate: "COMWUWA",
   },
 ];
