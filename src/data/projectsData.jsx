@@ -87,7 +87,7 @@ export const PROJECTS_DATA = [
     category: "E-commerce",
     statusKey: "production",
     title: "Full-Stack Electronic-Store",
-    image: ElectroimgImg,
+    image: Electroimg,
     technologies: [
       { name: "vite", icon: <Icon icon="simple-icons:vite" /> },
       { name: "React", icon: <Icon icon="simple-icons:React" /> },
