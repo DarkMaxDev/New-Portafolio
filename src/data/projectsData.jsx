@@ -3,6 +3,7 @@ import CloneNetflixImg from "../assets/projects/CloneNetflix.png";
 import coffeImg from "../assets/projects/coffe.png";
 import skillshareLandingImg from "../assets/projects/WebAnime.png";
 import wuwaImg from "../assets/projects/Community_wuwa.png"
+import Electroimg from "../assets/projects/Electronic.png"
 import React from "react";
 
 export const PROJECTS_DATA = [
@@ -81,4 +82,33 @@ export const PROJECTS_DATA = [
     live: "https://wuthering-waves-community.onrender.com/",
     labelTranslate: "COMWUWA",
   },
+  {
+    id: 4,
+    category: "E-commerce",
+    statusKey: "production",
+    title: "Full-Stack Electronic-Store",
+    image: ElectroimgImg,
+    technologies: [
+      { name: "vite", icon: <Icon icon="simple-icons:vite" /> },
+      { name: "React", icon: <Icon icon="simple-icons:React" /> },
+      { name: "Node", icon: <Icon icon="simple-icons:Node" /> },
+      { name: "Express", icon: <Icon icon="simple-icons:Express" /> },
+      { name: "TypeScript", icon: <Icon icon="simple-icons:TypeScript" /> },
+      { name: "Tailwind", icon: <Icon icon="simple-icons:tailwindcss" /> },
+      { name: "MongoDB", icon: <Icon icon="simple-icons:MongoDB" /> },
+      { name: "Bcrypt", icon: <Icon icon="simple-icons:bcrypt" /> },
+      { name: "Framer-Motion", icon: <Icon icon="simple-icons:Framer-Motion" /> },
+    ],
+    github: "https://github.com/DarkMaxDev/Electronic-Store",
+    live: "https://electronic-store-hx9q.onrender.com/",
+    labelTranslate: "Ele-store",
+  },
 ];
+
+
+
+
+
+
+
+
