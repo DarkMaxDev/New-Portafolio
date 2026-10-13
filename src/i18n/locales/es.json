@@ -79,8 +79,8 @@
         "description": "Les comparto mi más reciente proyecto: una plataforma web full-stack creada por y para la comunidad de Wuthering Waves.",
         "status": "IN PRODUCTION"
       },
-      "Ele-store": {
-        "description": "E-commerce Full-Stack de venta de Electronica en general, con incio de sesion, dashboard para admins registro de producots,ventas,entre mas",
+      "EleStore": {
+        "description": "E-commerce Full-Stack de venta de Electronica en general, con incio de sesion, dashboard para admins registro de productos,ventas,entre mas",
         "status": "IN PRODUCTION"
       }
     }

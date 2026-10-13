@@ -101,7 +101,7 @@ export const PROJECTS_DATA = [
     ],
     github: "https://github.com/DarkMaxDev/Electronic-Store",
     live: "https://electronic-store-hx9q.onrender.com/",
-    labelTranslate: "Ele-store",
+    labelTranslate: "EleStore",
   },
 ];
 
