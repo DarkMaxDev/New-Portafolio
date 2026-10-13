@@ -78,6 +78,10 @@
       "COMWUWA": {
         "description": "I'm sharing my latest project with you: a full-stack web platform created by and for the Wuthering Waves community.",
         "status": "IN PRODUCTION"
+      },
+      "EleStore": {
+        "description": "Full-stack e-commerce platform for general electronics, featuring user login, an admin dashboard, product registration, sales tracking, and more.",
+        "status": "IN PRODUCTION"
       }
     }
   },
