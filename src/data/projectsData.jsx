@@ -83,7 +83,7 @@ export const PROJECTS_DATA = [
     labelTranslate: "COMWUWA",
   },
   {
-    id: 4,
+    id: 5,
     category: "E-commerce",
     statusKey: "production",
     title: "Full-Stack Electronic-Store",
