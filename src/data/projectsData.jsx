@@ -4,6 +4,7 @@ import coffeImg from "../assets/projects/coffe.png";
 import skillshareLandingImg from "../assets/projects/WebAnime.png";
 import wuwaImg from "../assets/projects/Community_wuwa.png";
 import electroImg from "../assets/projects/Electronic.png";
+import studyImg from "../assets/projects/StudyNow.png";
 import React from "react";
 
 export const PROJECTS_DATA = [
@@ -102,6 +103,28 @@ export const PROJECTS_DATA = [
     github: "https://github.com/DarkMaxDev/Electronic-Store",
     live: "https://electronic-store-hx9q.onrender.com/",
     labelTranslate: "EleStore",
+  },
+  {
+    id: 6,
+    category: "Study",
+    statusKey: "production",
+    title: "Full-Stack || StudyNow - Lecturas & Guardado",
+    image: studyImg,
+    technologies: [
+      { name: "Next.js", icon: <Icon icon="simple-icons:nextjs" /> },
+      { name: "React", icon: <Icon icon="simple-icons:React" /> },
+      { name: "Node", icon: <Icon icon="simple-icons:Node" /> },
+      { name: "Express", icon: <Icon icon="simple-icons:Express" /> },
+      { name: "TypeScript", icon: <Icon icon="simple-icons:TypeScript" /> },
+      { name: "Tailwind", icon: <Icon icon="simple-icons:tailwindcss" /> },
+      { name: "MongoDB", icon: <Icon icon="simple-icons:MongoDB" /> },
+      { name: "NextAuth", icon: <Icon icon="simple-icons:NextAuth" /> },
+      { name: "Bcrypt", icon: <Icon icon="simple-icons:bcrypt" /> },
+      { name: "Framer-Motion", icon: <Icon icon="simple-icons:Framer-Motion" /> },
+    ],
+    github: "https://github.com/DarkMaxDev/StudyNow---Lecturas-Guardado",
+    live: "https://studynow-lecturas-guardado.onrender.com/login",
+    labelTranslate: "StudyNow",
   },
 ];
 

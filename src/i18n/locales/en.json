@@ -52,7 +52,8 @@
     "filterCat": {
       "Community": "Community",
       "Streaming": "Streaming",
-      "E-commerce": "E-commerce"
+      "E-commerce": "E-commerce",
+      "Study":"Study"
     },
     "noResults": "No projects found matching that filter",
     "showMore": "Show More",
@@ -81,6 +82,10 @@
       },
       "EleStore": {
         "description": "Full-stack e-commerce platform for general electronics, featuring user login, an admin dashboard, product registration, sales tracking, and more.",
+        "status": "IN PRODUCTION"
+      },
+      "StudyNow": {
+        "description": "Full-stack - Personal platform for focused study of books, PDF courses, and more.",
         "status": "IN PRODUCTION"
       }
     }

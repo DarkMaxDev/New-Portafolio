@@ -52,7 +52,8 @@
     "filterCat": {
       "Community": "Comunidad",
       "Streaming": "Entretenimiento",
-      "E-commerce": "Comercio Electrónico"
+      "E-commerce": "Comercio Electrónico",
+      "Study": "Estudio"
     },
     "noResults": "No se encontraron proyectos con ese filtro",
     "showMore": "Ver más",
@@ -81,6 +82,10 @@
       },
       "EleStore": {
         "description": "E-commerce Full-Stack de venta de Electronica en general, con incio de sesion, dashboard para admins registro de productos,ventas,entre mas",
+        "status": "IN PRODUCTION"
+      },
+      "StudyNow": {
+        "description": "Plataforma de uso personal para concentracion de estudio de libros, cursos en pdf y mas.",
         "status": "IN PRODUCTION"
       }
     }
