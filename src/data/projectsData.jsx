@@ -2,8 +2,8 @@ import { Icon } from "@iconify/react";
 import CloneNetflixImg from "../assets/projects/CloneNetflix.png";
 import coffeImg from "../assets/projects/coffe.png";
 import skillshareLandingImg from "../assets/projects/WebAnime.png";
-import wuwaImg from "../assets/projects/Community_wuwa.png"
-import Electroimg from "../assets/projects/Electronic.png"
+import wuwaImg from "../assets/projects/Community_wuwa.png";
+import electroImg from "../assets/projects/Electronic.png";
 import React from "react";
 
 export const PROJECTS_DATA = [
@@ -87,7 +87,7 @@ export const PROJECTS_DATA = [
     category: "E-commerce",
     statusKey: "production",
     title: "Full-Stack Electronic-Store",
-    image: Electroimg,
+    image: electroImg,
     technologies: [
       { name: "vite", icon: <Icon icon="simple-icons:vite" /> },
       { name: "React", icon: <Icon icon="simple-icons:React" /> },
