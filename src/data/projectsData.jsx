@@ -123,7 +123,7 @@ export const PROJECTS_DATA = [
       { name: "Framer-Motion", icon: <Icon icon="simple-icons:Framer-Motion" /> },
     ],
     github: "https://github.com/DarkMaxDev/StudyNow---Lecturas-Guardado",
-    live: "https://studynow-lecturas-guardado.onrender.com/login",
+    live: "https://lecturas-al-100.onrender.com/",
     labelTranslate: "StudyNow",
   },
 ];
